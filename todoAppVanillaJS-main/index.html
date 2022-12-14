@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TODO List</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1>ToDo App</h1>
+
+		<form id="form" action="#">
+			<input id="task" type="text" name="task" placeholder="Enter a task" autofocus>
+			<input id="btn" type="submit" value="Add">
+		</form>
+
+		<div id="task-list"></div>
+	</div>
+
+	<template id="template">
+		<div class="task-card task-active">
+			<p class="title">Tarea 1</p>
+			<div class="btns">
+				<button class="btn-action btn-success">✅</button>
+				<button class="btn-action btn-delete">⛔</button>
+			</div>
+		</div>
+	</template>
+	<!--🔄-->
+	<script type="text/javascript" src="./app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Poppins&display=swap" rel="stylesheet">
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Shooping Cart</h1>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div id="container">
+            <h1>Products</h1>
+
+            <div id="cards"></div>
+
+            <h1>Shopping Cart</h1>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">PRODUCTO</th>
+                        <th scope="col">CATIDAD</th>
+                        <th scope="col">ACCIÓN</th>
+                        <th scope="col">TOTAL</th>
+                    </tr>
+                </thead>
+                <tbody id="items"></tbody>
+                <tfoot>
+                    <tr id="footer">
+                        <th scope="row">Carrito vacío</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    
+        <template id="template-card">
+            <div class="card">
+                <img src="" alt="">
+                <h3>Titulo</h3>
+                <p>Precio</p>
+                <button class="btn-add">Comprar</button>
+            </div>
+        </template>
+    
+        <template id="cart-template">
+            <tr>
+                <th scope="row">id</th>
+                <td></td>
+                <td></td>
+                <td>
+                    <button id="btn-more" class="btn-more"> + </button>
+                    <button id="btn-less" class="btn-less"> - </button>
+                </td>
+                <td>$<span></span></td>
+            </tr>
+        </template>
+    
+        <template id="cart-footer">
+            <th scope="row">Total</th>
+            <td>0</td>
+            <td>
+                <button id="btn-clear"> Vaciar carrito</button>
+            </td>
+            <td>$<span>0</span></td>
+        </template>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

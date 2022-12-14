@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    height: auto;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#task {
+    width: 90%;
+    height: 50px;
+    margin: 10px auto;
+    padding: 10px;
+    display: block;
+    border-radius: 10px;
+    border: 5px solid #cccccc;
+    font-size: 20px;
+}
+
+#btn {
+    width: 100px;
+    height: 50px;
+    margin: 10px auto;
+    display: block;
+    border-radius: 10px;
+    border: 5px solid #333333;
+    font-size: 20px;
+}
+
+#task-list {
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.task-card {
+    width: 90%;
+    height: 80px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 5px solid #333333;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.empty-tasklist {
+    width: 90%;
+    height: 80px;
+    margin: 10px auto;
+    padding: 10px;
+    border: 5px solid #333333;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    text-align: center;
+    line-height: 50px;
+}
+
+.task-active {
+    background-color: chartreuse;
+}
+
+.task-deactivate {
+    background-color: blueviolet;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 30px;
+}
+
+.btn-action {
+    font-size: 30px;
+    background-color: transparent;
+    border: none;
+}
